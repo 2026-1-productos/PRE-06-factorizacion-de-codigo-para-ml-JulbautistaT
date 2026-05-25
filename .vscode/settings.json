@@ -1,7 +1,7 @@
 {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "notebook.defaultFormatter": "ms-python.black-formatter",
-    "editor.codeActionsOnSave": {
+    "notebook.codeActionsOnSave": {
         "source.organizeImports": "always"
     },
     "python.testing.unittestEnabled": false,
@@ -12,11 +12,20 @@
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
             "source.organizeImports": "explicit"
-        },
+        }
     },
     "isort.args": [
         "--profile",
         "black"
     ],
+    "[notebook]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+
+
     "editor.detectIndentation": false,
 }
